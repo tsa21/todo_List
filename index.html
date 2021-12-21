@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TODO LIST </title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="./firebase.js"></script>
+
+</head>
+<body>
+  <h1>TODO LIST</h1>
+  <div class="list">
+    <input type="text" class="input" placeholder="Add todos in your list"/>
+    <span class="add" onSubmit = "addItem(event)">+</span>
+  </div>
+  <ul>
+    <li class="draggable" id="tolist" draggable="true">todo1</li>
+  </ul>
+
+  <script  src="function.js"></script>
+
+</body>
+</html>
